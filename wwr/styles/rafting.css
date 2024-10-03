@@ -1,0 +1,97 @@
+section h2{
+    color: coral;
+}
+
+ nav ul{
+    list-style: none;
+    display: flex;
+} 
+
+nav ul li a{
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+
+  /* Headings */
+h1, h2, h3{
+    color: var(--primary-color);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  /* Paragraphs */
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  /* Social Media Links */
+.social-media-links a {
+    text-decoration: none;
+    color: var(--secondary-color);
+  }
+  
+  /* Page Width */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  /* Hero Container */
+.hero {
+    position: relative;
+    background-image: url('/wwr/images/rafting58_600.jpg');
+    background-size: cover;
+    height: 500px;
+    background-position: center;
+    background-size: cover;                                                                                                                                                                                                     
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: black;
+  }
+
+  
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .hero article img {
+    float: right;
+    margin: 10px;
+    width: 100px;
+  }
+  
+  
+.hero article img {
+    float: right;
+    margin: 10px;
+    width: 100px;
+  }
+  
+  .hero article p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
