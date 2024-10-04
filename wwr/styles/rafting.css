@@ -59,12 +59,12 @@ p {
   
   .hero h1 {
     position: absolute;
-    top: 25px;
+    top: 0px;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
-    color: #fff;
-    margin: 10px;
+    font-size: 48px;
+    color: white;
+    margin: 20px;
     border-radius: 5px;
     background-color: black;
   }
@@ -72,17 +72,17 @@ p {
   
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 100px;
+    left: 1px;
     background-color: rgba(255, 255, 255, 0.7);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 0px;
+    border-radius: 16sspx;
   }
   
   .hero article img {
     float: right;
-    margin: 10px;
-    width: 100px;
+    margin: 5px;
+    width: 90px;
   }
   
   
