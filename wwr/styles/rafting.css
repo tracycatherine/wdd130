@@ -59,7 +59,7 @@ p {
   
   .hero h1 {
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 40px;
