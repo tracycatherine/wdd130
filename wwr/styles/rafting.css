@@ -49,7 +49,7 @@ p {
   /* Hero Container */
 .hero {
     position: relative;
-    background-image: url(/wwr/images/rafting65_600.jpg);
+    background-image: url('../images/rafting52_600.jpg');
     background-size: cover;
     height: 500px;
     background-position: center;
