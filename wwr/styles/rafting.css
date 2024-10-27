@@ -35,8 +35,7 @@ p {
 
 header {
   display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
+ align-items: center;
   padding: 20px;
   background-color: var(--accent1-color);
   border-radius: 15px;
