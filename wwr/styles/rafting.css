@@ -375,16 +375,6 @@ body {
   color: #34495e;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #bdc3c7;
-  border-radius: 8px;
-  font-size: 1em;
-  transition: border-color 0.3s ease;
-}
 
 .contact-form input[type="text"]:focus,
 .contact-form input[type="email"]:focus,
@@ -464,7 +454,7 @@ body {
       font-size: 2em;
   }
 
-  .company-info h2,
+
   .contact-form h2 {
       font-size: 1.5em;
   }
