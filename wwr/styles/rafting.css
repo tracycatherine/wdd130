@@ -279,6 +279,12 @@ footer .copyright {
 
 footer
 
+
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 /* Contact Page Specific Styles */
 .contact-page h1 {
   text-align: center;
@@ -291,18 +297,21 @@ footer
   padding-bottom: 10px;
 }
 
-.company-info {
+.company-info,
+.contact-form {
   background-color: #f9f9f9;
   padding: 30px;
   border-radius: 15px;
-  margin-bottom: 40px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
 }
 
-.company-info h2 {
+.company-info h2,
+.contact-form h2 {
   color: var(--primary-color);
   margin-bottom: 20px;
   font-size: 1.8em;
+  text-align: center;
   border-left: 5px solid var(--secondary-color);
   padding-left: 15px;
 }
@@ -319,7 +328,6 @@ footer
   border: none;
   border-radius: 15px;
   margin-top: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .employee-profiles {
@@ -359,22 +367,6 @@ footer
   font-size: 1.1em;
 }
 
-.contact-form {
-  background-color: #f0f0f0;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form h2 {
-  color: var(--primary-color);
-  margin-bottom: 25px;
-  font-size: 1.8em;
-  text-align: center;
-  border-bottom: 2px solid var(--secondary-color);
-  padding-bottom: 10px;
-}
-
 .contact-form form {
   display: grid;
   gap: 20px;
@@ -402,27 +394,6 @@ footer
   border-color: var(--secondary-color);
   outline: none;
   box-shadow: 0 0 5px rgba(0, 119, 182, 0.5);
-}
-
-.contact-form fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-form legend {
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: var(--primary-color);
-}
-
-.contact-form input[type="radio"] {
-  margin-right: 10px;
-}
-
-.contact-form textarea {
-  height: 150px;
-  resize: vertical;
 }
 
 .contact-form button {
@@ -462,48 +433,45 @@ footer
 /* Responsive adjustments */
 @media (max-width: 768px) {
   header {
-    grid-template-columns: 1fr;
+      grid-template-columns: 1fr;
   }
 
   nav {
-    justify-content: center;
+      justify-content: center;
   }
 
   .history-content {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .history img, .history p {
-    width: 100%;
-    margin: 10px 0;
+      width: 100%;
+      margin: 10px 0;
   }
 
   .adventures figure {
-    width: 48%;
+      width: 48%;
   }
 
   .employee-profiles {
-    flex-direction: column;
-    align-items: center;
+      flex-direction: column;
+      align-items: center;
   }
 
   .company-info iframe {
-    height: 300px;
+      height: 300px;
   }
 
   h1 {
-    font-size: 2em;
+      font-size: 2em;
   }
 
   .company-info h2,
   .contact-form h2 {
-    font-size: 1.5em;
+      font-size: 1.5em;
   }
 }
 
 @media (max-width: 480px) {
+  /* Add specific styles for mobile if needed */
 }
-  .adventures figure {
-    width: 100%;
-  }
-
