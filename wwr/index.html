@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Nile showers</title>
+    <meta name="description" content="Experience the thrill of whitewater rafting with Rapid Rush Adventures. Join us for unforgettable adventures and stay connected with our latest news and promotions.">
+    <meta name="author" content="Tracy Nalubwama">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="images/log.jpg" alt="nileshowers Logo">
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="great1">
+            <div class="great-content">
+                <h1>Nile Showers Rafting </h1>
+                <h2>Experience the Thrill of Nile Showers Rafting <br> Embark on an Unforgettable Whitewater Rafting Adventure</h2>
+                <p>Join us for unforgettable adventures on the rapids!</p>
+                <a href="trips.html" class="button">Explore Trips</a>
+                <img src="images/chilling.jpg" alt="floating paddle" width="200" height="200">
+            </div>
+        </section>
+        
+        <section class="grid-layout">
+            <div class="grid-item">
+                <img src="images/yelloworange.jpg" alt="Rafting Adventure 1">
+                <p>Our Purpose <br> At Rapid Rush Adventures, we're dedicated to providing thrilling and safe whitewater rafting experiences for adventure seekers of all levels.</p>
+            </div>
+            <div class="grid-item">
+                <img src="images/massrafting.jpg" alt="Rafting Adventure 2">
+                <p>Our Offerings <br> We offer a variety of rafting trips, from beginner-friendly excursions to challenging adventures for experienced rafters.</p>
+            </div>
+        </section>
+        
+        <section class="newsletter-signup">
+            <p> Stay Connected <br> Sign up for the latest rafting news and promotions.</p>
+            <form id="newsletter-form">
+                <input type="text" name="name" id="name" placeholder="Your Name" required>
+                <input type="email" name="email" id="email" placeholder="Your Email" required>
+                <button type="submit" class="button">Sign Up</button>
+            </form>
+            <div class="subscriber-count">
+                <h3>Current Subscribers: <span id="subscriber-count">0</span></h3>
+            </div>
+        </section>
+        
+        <section class="testimonial-carousel">
+            <h2>What Our Adventurers Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial-slide active">
+                    <img src="images/teamguys.jpg" alt="User Photo">
+                    <p>"What a rush. 🌊 Our family had a blast paddling through the rapids. Can't wait for our next adventure! 🛶💦"<br> - Tracy Catherine</p>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="images/speed-boats.jpg" alt="User Photo">
+                    <p>"Best adventure ever! Absolutely exhilarating. 🤩 The guides were amazing, and the scenery was breathtaking. A must-do for thrill-seekers 🌲🌞" <br>- Antonio Omara</p>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="images/riverflow.jpg" alt="User Photo">
+                    <p>"Amazing rafting experience. Best day ever. 🎉 We laughed, splashed, and conquered every wave. Already planning round two 💪💧"<br> - Micheal Angelo</p>
+                </div>
+                <div class="testimonial-slide">
+                    <img src="images/massrafting.jpg" alt="User Photo">
+                    <p>"Best adventure ever! Rafting with these pros was a total game-changer 🥳 From start to finish, it was non-stop fun. Highly recommend 🙌🏞"<br> - Xtiana Tina</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 Tracy Nalubwama. All rights reserved.</p>
+        </div>
+        <div class="sociallinks">
+            <a href="https://facebook.com"><img src="images/Facebook.webp" alt="Facebook"></a>
+            <a href="https://twitter.com"><img src="images/twitter-pencil6.webp" alt="Twitter"></a> 
+            <a href="https://youtube.com"><img src="images/Youtbe.png" alt="youtube"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Sticky Navigation
+        let lastScrollTop = 0;
+        const navbar = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > lastScrollTop) {
+                navbar.classList.add('scrolled');
+                navbar.classList.remove('visible');
+            } else {
+                navbar.classList.remove('scrolled');
+                navbar.classList.add('visible');
+            }
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+
+        // Testimonial Carousel
+        const slides = document.querySelectorAll('.testimonial-slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        setInterval(nextSlide, 4000);
+
+        // Newsletter Form
+        const form = document.getElementById('newsletter-form');
+        const subscriberDisplay = document.getElementById('subscriber-count');
+        let subscriberCount = 120;
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            subscriberCount++;
+            subscriberDisplay.textContent = subscriberCount;
+            form.reset();
+        });
+
+        // Initial subscriber count
+        subscriberDisplay.textContent = subscriberCount;
+    </script>
+</body>
+</html>

@@ -79,21 +79,25 @@ nav a:hover {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 .hero {
-  position: relative;
-  align-items: center;
-  background-image: url(../images/rafting30_600.jpg);
+  position: relative; /* Ensure the hero div is positioned relative */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  background-image: url(../images/rafting30_600.jpg); /* Background image */
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 60vh; /* Set height */
   border-radius: 15px;
   overflow: hidden;
   margin-bottom: 40px;
 }
 
+
 .hero::before {
   content: '';
-  position: absolute;
+  position: absolute; /* Overlay gradient */
   top: 0;
   left: 0;
   right: 0;
@@ -102,8 +106,8 @@ nav a:hover {
 }
 
 .hero h1 {
-  position: absolute;
-  top: 30px;
+  position: absolute; /* Positioning h1 absolutely */
+  top: 30px; /* Adjust as needed */
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.8);
@@ -116,24 +120,24 @@ nav a:hover {
 }
 
 .hero article {
-  position: absolute;
-  bottom: 30px;
+  position: absolute; /* Positioning article absolutely */
+  bottom: 30px; /* Adjust as needed */
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
-  max-width: 60%;
+  max-width: 60%; /* Limit width */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .hero article img {
-  float: right;
-  width: 100px;
-  height: auto;
-  margin-left: 20px;
-  border-radius: 50%;
-  border: 3px solid var(--primary-color);
+  float: right; /* Float image to the right */
+  width: 100px; /* Set width */
+  height: auto; /* Maintain aspect ratio */
+  margin-left: 20px; /* Margin for spacing */
+  border-radius: 50%; /* Circular image */
+  border: 3px solid var(--primary-color); /* Border color */
 }
 
 main {
@@ -248,30 +252,33 @@ footer {
   background-color: var(--accent1-color);
   border-radius: 15px;
 }
+  
+  .sociallinks {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+  }
+  
+  .sociallinks a {
+    transition: transform 0.3s ease;
+  }
+  
+  .sociallinks a:hover {
+    transform: translateY(-3px);
+  }
+  
+  .sociallinks img {
+    width: 40px;
+    height: auto;
+  }
+
 
 footer .copyright {
   flex-grow: 1;
   text-align: center;
 }
 
-footer .sociallinks {
-  display: flex;
-  gap: 15px;
-  margin-left: auto;
-}
-
-.sociallinks a {
-  transition: transform 0.3s ease;
-}
-
-.sociallinks a:hover {
-  transform: translateY(-3px);
-}
-
-.sociallinks img {
-  width: 40px;
-  height: auto;
-}
+footer
 
 /* Contact Page Specific Styles */
 .contact-page h1 {
