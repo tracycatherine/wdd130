@@ -1,0 +1,19 @@
+<svg width="800" height="1600" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="800" height="100" fill="#A0D0E0" />
+<text x="400" y="50" font-size="24" text-anchor="middle" fill="#000">Header</text>
+
+<rect x="0" y="100" width="800" height="300" fill="#D0E0E0" />
+<text x="400" y="250" font-size="20" text-anchor="middle" fill="#000">Main Banner</text>
+
+<rect x="0" y="400" width="800" height="200" fill="#B0C0D0" />
+<text x="400" y="500" font-size="20" text-anchor="middle" fill="#000">Featured Adventures</text>
+
+<rect x="0" y="600" width="800" height="200" fill="#B0C0D0" />
+<text x="400" y="700" font-size="20" text-anchor="middle" fill="#000">Adventure Series</text>
+
+<rect x="0" y="800" width="800" height="300" fill="#D0E0E0" />
+<text x="400" y="950" font-size="20" text-anchor="middle" fill="#000">Trip Schedule</text>
+
+<rect x="0" y="1100" width="800" height="100" fill="#A0D0E0" />
+<text x="400" y="1150" font-size="20" text-anchor="middle" fill="#000">Footer</text>
+</svg>
